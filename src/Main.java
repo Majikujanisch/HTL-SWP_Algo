@@ -14,7 +14,6 @@ public class Main {
         if(BinearySearch(input,6)){
             System.out.println("Funktioniert!");
         }
-        System.out.println("nicht");
 
 
     }
@@ -30,14 +29,22 @@ public class Main {
 
         }
         do {
+            System.out.println(halvedInput);
             if (halvedInput == searchnumber) {
                 found = true;
                 return true;
-            } else if (searchnumber > halvedInput) {
+            } else if (searchnumber > halvedInput && changeingNumber > 1) {
                 halvedInput = halvedInput + changeingNumber;
 
-            } else if (searchnumber < halvedInput) {
+            } else if (searchnumber < halvedInput && changeingNumber > 1) {
                 halvedInput = halvedInput - changeingNumber;
+
+            }
+            else if (searchnumber > halvedInput && changeingNumber < 1) {
+                halvedInput = halvedInput + 1;
+
+            } else if (searchnumber < halvedInput && changeingNumber > 1) {
+                halvedInput = halvedInput - 1;
 
             }
             changeingNumber = changeingNumber/2;
