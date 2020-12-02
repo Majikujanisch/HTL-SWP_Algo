@@ -1,0 +1,23 @@
+#MAIN
+Binärsuche sowie sequentielle Suche. 
+Binärsuche: 
+Ein Array wird so lange halbiert bis man durch diese halbierung genau die zahl findet die man sucht,
+um zu wissen welche hälfte man weiter halbieren muss wird geschaut ob die derzeitige Mitte größer oder kleiner 
+der gesuchten Zahl ist.
+Aufwandsklasse: log2(n+1)
+
+sequentielle Suche:
+Man geht von der ersten Zahl los und zählt immer eins dazu, bis man die gesuchte Zahl gefunden hat.
+Aufwandsklasse: n 
+
+#IterativandMore
+Iteration und Rekursion der Summenfunktion sowie Rekursion der Potenzfunktino und Fibonacci rekursiv
+
+#Endrekursion
+Dasselbe wie in IterativandMor nun aber Fibonacci enrekursiv programmiert
+
+#BubbleSort
+Bubblesort:
+Man vergleicht jeden Wert mit den nächsten im Array und schaut welcher größer ist. Sollte Wert 2 größer werden
+die Plätze dieser gewechselt und man geht zur nächsten Zahl. Sollte Wert 1 größer sein bleiben beide an ihrer Stelle.
+Aufwandsklasse: n^2
